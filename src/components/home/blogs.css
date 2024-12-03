@@ -1,0 +1,123 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+.scroller-blog{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 1);
+}
+
+.scroll-container {
+    max-width: 1100px;
+    width: 100%;
+    padding-top: 40px;
+    padding: 40px;   
+}
+.h6{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(100, 48, 192, 1);
+}
+.scroll-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 46px;
+    font-family: 'Sora';
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b46c1;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+#sub-text{
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'Sora';
+}
+
+.blog {
+    scroll-behavior: smooth;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 30px;
+    /* scrollbar-width: none; */
+    /* For Firefox */
+}
+
+.blog::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+.blog-card {
+    background: linear-gradient(to bottom, #5F2EB7 0%, #1C163B 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    height: 315px;
+}
+
+.blog-image {
+    height: 135px;
+    width: 275px;
+    border-radius: 20px;
+    margin: 22px 22px;
+    background: rgba(217, 217, 217, 1);
+}
+
+.blog-content {
+    padding: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.blog-title {
+    font-size: 24px;
+    margin-top: -15px;
+    font-weight: 450;
+    color: white;
+}
+
+.blog-description {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-family: 'inter';
+}
+
+.read-more {
+    padding: 8px 12px;
+    background-color: #6430C0;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: 14px;
+    float: right;
+    margin-top: 8px;
+    
+}
+
+.read-more:hover {
+    background-color: #6430C0;
+}
+.custom-icon {
+    font-size: 15px; 
+    color: #ffffff;
+    font-weight: 800;
+  }
+  

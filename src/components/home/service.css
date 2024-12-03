@@ -1,0 +1,138 @@
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.p-container {
+    background-color: #ffffff;
+    padding: 5rem 2.1rem;
+}
+ 
+.p-container h6,
+.p-container h1 {
+    text-align: center;
+}
+ 
+.p-container h6 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(100, 48, 192, 1);
+}
+ 
+.p-container h1 {
+    color: #000;
+    font-size: 46px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+ 
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.services-01,
+.services-02 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+ 
+.service-item {
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.service-up-01 {
+    background: linear-gradient(180deg, #2B409C 0%, #1E2D6D 30.98%, #0F1636 100%);
+    color: #ffffff;
+}
+ 
+.service-up,
+.service-down {
+    background: linear-gradient(180deg, rgba(43, 64, 156, 0.1) 0%, rgba(30, 45, 109, 0.1) 30.98%, rgba(15, 22, 54, 0.1) 100%);
+}
+ 
+.service-item:hover {
+    background: linear-gradient(180deg, #2B409C 0%, #1E2D6D 30.98%, #0F1636 100%);
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+ 
+.service-content {
+    text-align: center;
+}
+ 
+.service-content h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+ 
+.service-content p {
+    margin: 0;
+    word-break: break-word;
+    font-family: 'inter';
+    font-weight: 300;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+ 
+.service-item:hover .service-content p {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+ 
+@media (max-width: 1024px) {
+    .p-container {
+        padding: 4rem 1rem;
+    }
+ 
+    .p-container h1 {
+        font-size: 1.75rem;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .p-container {
+        padding: 3rem 1rem;
+    }
+ 
+    .p-container h1 {
+        font-size: 1.5rem;
+    }
+ 
+    .services-01,
+    .services-02 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+ 
+@media (max-width: 460px) {
+    .p-container {
+        padding: 2rem 1.5rem;
+    }
+ 
+    .p-container h1 {
+        font-size: 1.25rem;
+    }
+ 
+    .services-01,
+    .services-02 {
+        grid-template-columns: 1fr;
+    }
+}

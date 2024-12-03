@@ -1,0 +1,123 @@
+.vd-body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.vd-video-container {
+  width: 100%;
+  max-width: 84%;
+  max-height: 400px;
+  height: 100%;
+  aspect-ratio: 16/9;
+  background-color: black;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vd-play-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100px;
+height: 100px;
+background-color: #6030C0;
+border-radius: 123%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.vd-play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #553c9a;
+}
+
+.vd-play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 5px 20px 43px;
+  border-color: transparent transparent transparent #ffffff;
+  margin-left: 17px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.vd-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6b46c1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .vd-body{
+    min-height: 34vh;
+  }
+  .vd-video-container {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .vd-play-button {
+    width: 90px;
+    height: 90px;
+  }
+
+  .vd-play-icon {
+    border-width: 17px 0 17px 27px;
+    margin-left: 12px;
+  }
+
+  .vd-loading {
+    width: 30px;
+    height: 30px;
+    border-width: 3px;
+  }
+}
+@media (max-width: 768px){
+  .vd-body{
+    min-height: 40vh;
+  }
+}  
+@media (max-width: 800px){
+  .vd-body{
+    min-height: 34vh;
+  }
+}
+@media (max-width: 1024px){
+  .vd-body{
+    min-height: 34vh;
+  }
+}

@@ -1,0 +1,83 @@
+.trusted-by {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 10rem;
+    background-color: #FFFFFF;
+}
+
+.trusted-by-title {
+    color: #040309;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    width: 300px;}
+
+.logo-carousel {
+    overflow: hidden; /* Hide overflowing logos */
+    white-space: nowrap; /* Prevent line breaks */
+    width: 100%; /* Full width of the parent */
+}
+
+.logo-track {
+    display: inline-block; /* Allows for horizontal scrolling */
+    animation: scroll 15s linear infinite; /* Animation for scrolling */
+}
+
+.logo-item {
+    display: inline-block; /* Allows for inline display */
+    max-width: 120px; /* Adjust the logo size */
+    height: auto;
+    opacity: 1;
+    margin-right: 55px; /* Full opacity, no hover effect */
+}
+
+/* Continuous scroll animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move left by 50% to cycle back to start */
+}
+
+/* Responsive styles */
+@media (max-width: 680px) {
+    .logo-item {
+        max-width: 80px; /* Adjust logo size for smaller screens */
+    }
+    
+        .trusted-by-title {
+            text-align: center;
+            color: #666;
+            /* font-size: 0.875rem; */
+            text-transform: uppercase;
+            margin-bottom: 0;
+            width: 300px;
+        }
+    .trusted-by {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 1rem 0rem;
+        background-color: #FFFFFF;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-item {
+        max-width: 60px; /* Further adjust logo size */
+    }
+    
+        .trusted-by-title {
+            text-align: center;
+            color: #040309;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            width: 300px;
+        }
+    .trusted-by {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0rem;
+        background-color: #FFFFFF;
+    }
+}

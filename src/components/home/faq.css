@@ -1,0 +1,149 @@
+.faq-section {
+    background-color: #f0f0f3;
+    padding: 60px 0;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-header h2 {
+    font-size: 40px;
+    color: #040309;
+    font-weight: 400;
+    padding: 20px;
+    font-family: 'Sora';
+    margin-top: 10px;
+}
+
+.faq-header h6 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(100, 48, 192, 1);
+}
+
+.faq-list {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-family: 'inter';
+    font-weight: 400;
+    color: rgba(100, 48, 192, 1);
+}
+
+.faq-toggle {
+    font-size: 24px;
+    color: #8b5cf6;
+}
+
+.faq-answer {
+    padding: 0 20px 20px;
+    display: none;
+}
+.faq-answer p {
+   font-size: 14px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.get-template-btn {
+    display: block;
+    width: 50%; 
+    /* max-width: 96%; */
+    margin: 40px auto; 
+    padding: 15px;
+    background: rgba(100, 48, 192, 1);
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; 
+}
+
+
+.get-template-btn:hover {
+    background-color: #7c3aed;
+}
+
+@media (max-width: 1024px) {
+    .faq-question h3 {
+        font-size: 20px;
+    }
+
+    .faq-toggle {
+        font-size: 25px;
+    }
+
+    .get-template-btn {
+        width: 75%; 
+        padding: 14px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question h3 {
+        font-size: 16px;
+    }
+
+    .faq-toggle {
+        font-size: 20px;
+    }
+
+    .get-template-btn {
+        width: 75%; 
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-list {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .faq-answer p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .faq-question h3 {
+        font-size: 14px;
+    }
+
+    .faq-toggle {
+        font-size: 18px;
+    }
+
+    .get-template-btn {
+        width: 75%; 
+        padding: 10px;
+        font-size: 15px; 
+    }
+}
