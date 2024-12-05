@@ -233,7 +233,7 @@ font-size: 14px;
 
 @media (max-width: 480px) {
 header {
-padding: 10px 20px;
+padding:  20px;
 }
 
 nav ul {
